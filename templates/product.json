@@ -1,0 +1,272 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "main-breadcrumbs",
+      "settings": {
+        "full-width-enabled": false,
+        "text_color": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 28,
+        "margin-bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "brand": "{{ product.vendor }}",
+            "enable_vendor_link": false,
+            "size_text": 50,
+            "size_text_mobile": 80
+          }
+        },
+        "separator_Qt7zAY": {
+          "type": "separator",
+          "settings": {
+            "show-separator-line": false,
+            "color-background": "#000000",
+            "margin-top": 8,
+            "margin-bottom": 8
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax_included": true,
+            "show_shipping_policy": false,
+            "size_text": 120,
+            "size_text_mobile": 140
+          }
+        },
+        "separator_6rwB6Q": {
+          "type": "separator",
+          "settings": {
+            "show-separator-line": true,
+            "color-background": "#000000",
+            "margin-top": 16,
+            "margin-bottom": 16
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "color_swatch_names": "",
+            "variant_picture_swatch_names": "",
+            "thumb_size": 76,
+            "radius": "default",
+            "border_radius": 0,
+            "dropdown_swatch_names": "",
+            "margin-top": 8,
+            "margin-bottom": 8,
+            "size_icon": "check_mark",
+            "size_link": "",
+            "variant_name": "",
+            "size_content": "",
+            "metafield": "",
+            "enable-striped-rows": true
+          }
+        },
+        "input_line_edH9nj": {
+          "type": "input_line",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "show_qty_selector": false,
+            "text_color": "#ffffff",
+            "background_color": "#f36f75"
+          }
+        },
+        "text_KyChfM": {
+          "type": "text",
+          "settings": {
+            "heading": "{{ product.metafields.custom.product_description.value }}",
+            "content": "",
+            "page": ""
+          }
+        },
+        "2ce0b4b1-3440-40cd-92c2-15d46e61dfca": {
+          "type": "separator",
+          "settings": {
+            "show-separator-line": true,
+            "color-background": "#000000",
+            "margin-top": 12,
+            "margin-bottom": 0
+          }
+        },
+        "5fed6e0f-fb7e-4874-8ba9-3321623fc828": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Product Details",
+            "content": "{{ product.description }}",
+            "metafield_variables": "",
+            "page": "",
+            "icon": "none"
+          }
+        },
+        "separator_jY8GV3": {
+          "type": "separator",
+          "settings": {
+            "show-separator-line": true,
+            "color-background": "#000000",
+            "margin-top": 0,
+            "margin-bottom": 0
+          }
+        },
+        "d162f900-ee92-4311-b27d-d5f312fa73f2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Size Chart",
+            "content": "<p>Our team will ship your order within 5 business days. The time it takes to receive your order depends on the shipping method chosen at checkout. </p><p><br/></p><p>We hope you to love it, but if you need to make a return, breathe easy. Returns are always free and can be done in person or by mail. </p>",
+            "metafield_variables": "",
+            "page": "",
+            "icon": "none"
+          }
+        },
+        "separator_M9U6NC": {
+          "type": "separator",
+          "settings": {
+            "show-separator-line": true,
+            "color-background": "#000000",
+            "margin-top": 0,
+            "margin-bottom": 0
+          }
+        },
+        "collapsible_tab_UBp4bp": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Delivery & Return Policy",
+            "content": "<p>Our team will ship your order within 5 business days. The time it takes to receive your order depends on the shipping method chosen at checkout. </p><p><br/></p><p>We hope you to love it, but if you need to make a return, breathe easy. Returns are always free and can be done in person or by mail. </p>",
+            "metafield_variables": "",
+            "page": "",
+            "icon": "none"
+          }
+        },
+        "separator_fEXMP9": {
+          "type": "separator",
+          "settings": {
+            "show-separator-line": true,
+            "color-background": "#000000",
+            "margin-top": 0,
+            "margin-bottom": 0
+          }
+        },
+        "custom_complementary_WxJARC": {
+          "type": "custom_complementary",
+          "settings": {
+            "heading": "MATCH YOUR FAMILY"
+          }
+        },
+        "complementary_NCAzPJ": {
+          "type": "complementary",
+          "disabled": true,
+          "settings": {
+            "block_heading": "MATCH YOUR FAMILY",
+            "product_list_limit": 10,
+            "show_vendor": true,
+            "image-ratio": "square"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "separator_Qt7zAY",
+        "price",
+        "separator_6rwB6Q",
+        "variant_picker",
+        "input_line_edH9nj",
+        "buy_buttons",
+        "text_KyChfM",
+        "2ce0b4b1-3440-40cd-92c2-15d46e61dfca",
+        "5fed6e0f-fb7e-4874-8ba9-3321623fc828",
+        "separator_jY8GV3",
+        "d162f900-ee92-4311-b27d-d5f312fa73f2",
+        "separator_M9U6NC",
+        "collapsible_tab_UBp4bp",
+        "separator_fEXMP9",
+        "custom_complementary_WxJARC",
+        "complementary_NCAzPJ"
+      ],
+      "custom_css": [],
+      "settings": {
+        "enable_sticky_buy_button": true,
+        "full-width-enabled": false,
+        "desktop-media-size": "normal",
+        "desktop-layout": "carousel-horizontal",
+        "desktop-image-ratio": "square",
+        "enable_video_looping": false,
+        "video_controls": false,
+        "video_custom_play_controls": false,
+        "video_custom_mute_controls": false,
+        "enable-preselected-variant": true,
+        "enable-image-zoom": true,
+        "mobile-image": "normal",
+        "show-thumbnails-mobile": true,
+        "text_color": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 12,
+        "margin-bottom": 28
+      }
+    },
+    "featured_collection_enCGq7": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "class": "recommended-pro",
+        "advanced_heading": false,
+        "title": "RECOMMENDED PRODUCTS",
+        "heading_richtext": "<h2>Your headline here</h2>",
+        "disable_on_mobile": false,
+        "hide_empty_section": false,
+        "collection": "",
+        "product_list": [
+          "baby-swimwear",
+          "boys-swimwear",
+          "cap",
+          "swimwear-1"
+        ],
+        "products_to_show": 4,
+        "enable_stack_products": false,
+        "show_view_all": false,
+        "button_select": "primary",
+        "number_of_column_desktop": 4,
+        "spacing_desktop": "16",
+        "make_products_full_width": true,
+        "number_of_column_mobile": 1.4,
+        "spacing_mobile": "12",
+        "text_alignment": "left",
+        "image_ratio": "portrait",
+        "show_video": false,
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "enable_vendor_link": false,
+        "show_product_rating": false,
+        "enable_quick_add_button": false,
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)",
+        "margin-top": 24,
+        "margin-bottom": 40
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main",
+    "featured_collection_enCGq7"
+  ]
+}

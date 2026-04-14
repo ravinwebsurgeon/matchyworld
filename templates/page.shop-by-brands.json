@@ -1,0 +1,83 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "compact-size-enabled": true,
+        "size_heading": 140,
+        "size_heading_mobile": 100,
+        "color-body-text": "#151515",
+        "color-bg-overlay": "rgba(0,0,0,0)",
+        "color-overlay-opacity": 100,
+        "margin-top": 60,
+        "margin-bottom": 60
+      }
+    },
+    "brand_image_with_text_VqXk3g": {
+      "type": "brand-image-with-text",
+      "name": "Brand Image With Text",
+      "settings": {
+        "class": "",
+        "image": "shopify://shop_images/Hawaii_Nei_A_day_well_spent_at_Beach_Riot_Beach_Club_these_cuties_spent_the_day_learnin.png",
+        "image_brand": "shopify://shop_images/GDDjvx-1s0NR_copy_2.png",
+        "brand_para": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>",
+        "coll_link": "shopify://collections/beachriot",
+        "coll_text": "SHOP BRAND"
+      }
+    },
+    "brand_image_with_text_akpFJj": {
+      "type": "brand-image-with-text",
+      "name": "Brand Image With Text",
+      "settings": {
+        "class": "badawi",
+        "image": "shopify://shop_images/Matching_smiles_matching_vibes_Dad_son_in_Deep_Sea_Coral_Shorts_and_the_sunny_touch_of_the.png",
+        "image_brand": "shopify://shop_images/Badawii_Logos_Social_media_2024-12_copy.png",
+        "brand_para": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>",
+        "coll_link": "shopify://collections/badawi",
+        "coll_text": "SHOP BRAND"
+      }
+    },
+    "brand_image_with_text_3beCeR": {
+      "type": "brand-image-with-text",
+      "name": "Brand Image With Text",
+      "settings": {
+        "class": "mimikyomo",
+        "image": "shopify://shop_images/Screenshot_2026-03-03_at_3.00.41_PM.png",
+        "image_brand": "shopify://shop_images/Logo_minikyomo_290x_2x_copy.png",
+        "brand_para": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>",
+        "coll_link": "shopify://collections/mini-kyomo",
+        "coll_text": "SHOP BRAND"
+      }
+    },
+    "brand_image_with_text_DGGFG7": {
+      "type": "brand-image-with-text",
+      "name": "Brand Image With Text",
+      "settings": {
+        "class": "chamaye",
+        "image": "shopify://shop_images/Screenshot_2026-03-03_at_3.05.23_PM.png",
+        "image_brand": "shopify://shop_images/Chamaye-logorouge_509ba7c1-fd53-427d-9d2f-969e04a89c69_copy_2.png",
+        "brand_para": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>",
+        "coll_link": "shopify://collections/chamaye",
+        "coll_text": "SHOP BRAND"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "brand_image_with_text_VqXk3g",
+    "brand_image_with_text_akpFJj",
+    "brand_image_with_text_3beCeR",
+    "brand_image_with_text_DGGFG7"
+  ]
+}

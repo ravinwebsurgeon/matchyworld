@@ -1,0 +1,75 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "footer": {
+      "type": "page-footer",
+      "blocks": {
+        "menu_TyWCqJ": {
+          "type": "menu",
+          "settings": {
+            "heading_links": "SHOP",
+            "links": "shop"
+          }
+        },
+        "menu_DzCNd6": {
+          "type": "menu",
+          "settings": {
+            "heading_links": "EXPLORE",
+            "links": "explore"
+          }
+        },
+        "menu_9YUhCX": {
+          "type": "menu",
+          "settings": {
+            "heading_links": "MORE",
+            "links": "more"
+          }
+        },
+        "newsletter_JEN9Na": {
+          "type": "newsletter",
+          "settings": {
+            "heading": "FOLLOW US",
+            "heading_newsletter": "SUBSCRIBE TO OUR NEWSLETTER",
+            "text_newsletter": "",
+            "button_type": "secondary",
+            "button_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "menu_TyWCqJ",
+        "menu_DzCNd6",
+        "menu_9YUhCX",
+        "newsletter_JEN9Na"
+      ],
+      "settings": {
+        "show-scroll-effect": false,
+        "show-social-media-icons": true,
+        "show_country_selector": false,
+        "show_country_selector_label": false,
+        "show_country_selector_flag": false,
+        "show_language_selector": false,
+        "enable_follow_on_shop": false,
+        "show-payments-icons": false,
+        "show-copyright": true,
+        "text": "© 2026 Matchy World. All Rights Reserved",
+        "big-logo-width": 100,
+        "margin-top": 56,
+        "margin-bottom": 8
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

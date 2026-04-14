@@ -1,0 +1,96 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "main-breadcrumbs",
+      "disabled": true,
+      "settings": {
+        "full-width-enabled": false,
+        "text_color": "#000000",
+        "background_color": "#eeeeee",
+        "margin-top": 12,
+        "margin-bottom": 8
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_placeholder_image": true,
+        "layout": "text_first",
+        "desktop-percentage-image-width": 50,
+        "slide_height": "adapt_to_first_image",
+        "desktop_fixed_height": 320,
+        "mobile_fixed_height": 200,
+        "full-width-enabled": true,
+        "size_heading": 150,
+        "size_heading_mobile": 120,
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "left",
+        "mobile_text_horizontal_position": "center",
+        "color-body-text": "#000000",
+        "color-overlay": "#e3f2e6",
+        "color-overlay-opacity": 100,
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "title": {
+      "type": "main-collection-title",
+      "settings": {
+        "class": "shop-by-pro",
+        "full-width-enabled": false,
+        "show_collection_description": true,
+        "desktop_text_horizontal_position": "left",
+        "size_heading": 180,
+        "size_heading_mobile": 170,
+        "color-body-text": "#000000",
+        "background_color": "#ffffff",
+        "margin-top": 72,
+        "margin-bottom": 8
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 12,
+        "columns_mobile": "2",
+        "columns_desktop": "4",
+        "spacing_desktop": "16",
+        "full-width-enabled": false,
+        "spacing_mobile": "4",
+        "image_ratio": "portrait",
+        "show_video": false,
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "enable_vendor_link": true,
+        "show_product_rating": false,
+        "enable_product_url_within_collection": false,
+        "enable_quick_add_button": false,
+        "text_alignment": "left",
+        "toolbar_style": "buttons",
+        "enable_sorting": true,
+        "enable_filtering": true,
+        "filter_position": "drawer",
+        "open_first_filter": false,
+        "margin-top": 0,
+        "margin-bottom": 48
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "banner",
+    "title",
+    "product-grid"
+  ]
+}
