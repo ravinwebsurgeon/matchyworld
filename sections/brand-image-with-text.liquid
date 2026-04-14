@@ -1,0 +1,56 @@
+<div class="image-brand {{ section.settings.class }}">
+    <div class="image-con">
+        <div class="image-left">
+            <img src="{{ section.settings.image | img_url:'master' }}" width="100%" height="100%">
+        </div>
+        <div class="image-right">
+            <div class="image-con-right">
+                <img src="{{ section.settings.image_brand | img_url:'master' }}" width="100%" height="100%">
+                <div class="brand-text">{{ section.settings.brand_para }}</div>
+                <a href="{{ section.settings.coll_link }}">{{ section.settings.coll_text }}</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+"name": "Brand Image With Text",
+"settings":[
+    {
+    "type": "text",
+    "id": "class",
+    "label": "Add Class"
+    },
+    {
+    "type": "image_picker",
+    "id": "image",
+    "label": "Add Image"
+    },
+    {
+    "type": "image_picker",
+    "id":"image_brand",
+    "label":"Add Brand Logo"
+    },
+    {
+    "type": "richtext",
+    "id": "brand_para",
+    "label":"Brand Text"
+    },
+    {
+    "type": "url",
+    "id": "coll_link",
+    "label": "Add Brand Link"
+    },
+    {
+    "type": "text",
+    "id": "coll_text",
+    "label": "Add Brand Button Text"
+    }
+],
+"presets": [
+    {
+    "name": "Brand Image With Text"
+    }
+]
+}
+{% endschema %}

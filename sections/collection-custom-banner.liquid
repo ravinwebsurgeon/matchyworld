@@ -1,0 +1,45 @@
+<div class="custom-banner-coll {{ section.settings.class }}">
+    <div class="custom-banner-iinn">
+        <div class="custom-colll-bb">
+            <a href="{{ section.settings.col_link }}">
+                <img src="{{ section.settings.image | img_url:'master' }}" width="100%" height="100%">
+                        <div class="coll-heading">
+            <h2 class="coll-hhf">
+                {{ section.settings.coll_heading }}
+            </h2>
+        </div>
+            </a>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+"name": "Custom Coll Banner",
+"settings": [
+    {
+    "type": "text",
+    "id": "class",
+    "label": "Add Class"
+    },
+    {
+    "type": "url",
+    "id": "col_link",
+    "label": "Add Collection Link"
+    },
+    {
+    "type": "image_picker",
+    "id":"image",
+    "label": "Add Image"
+    },
+    {
+    "type": "inline_richtext",
+    "id": "coll_heading",
+    "label": "Add Collection Heading"
+    }
+],
+"presets": [
+    {
+    "name": "Custom Coll Banner"}
+]
+}
+{% endschema %}

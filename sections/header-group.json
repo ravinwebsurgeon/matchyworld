@@ -1,0 +1,149 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement_YnK6g6": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free Shipping Over $50! Returns are always on us.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_YnK6g6"
+      ],
+      "settings": {
+        "marquee": false,
+        "animation_speed": "150",
+        "checkbox_close_announcement": false,
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "#f9f9f9"
+      }
+    },
+    "header": {
+      "type": "page-header",
+      "blocks": {
+        "column_W3ihtQ": {
+          "type": "column",
+          "settings": {
+            "title": "Shop All",
+            "promo_section_width": 4,
+            "stack_view": false,
+            "image_ratio": "adapt",
+            "heading_1": "",
+            "text_1": "Firming face serum Orange",
+            "link_1": "",
+            "heading_2": "",
+            "text_2": "Moisturizing hand lotion",
+            "link_2": "",
+            "heading_3": "",
+            "text_3": "Floral face moisturized",
+            "link_3": "",
+            "heading_4": "",
+            "text_4": "Body salt scrub 300g",
+            "link_4": "",
+            "heading_5": "",
+            "text_5": "Nourishing hand balm",
+            "link_5": "",
+            "heading_6": "",
+            "text_6": "",
+            "link_6": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_W3ihtQ"
+      ],
+      "settings": {
+        "layout": "option_3",
+        "sticky_header": true,
+        "sticky_header_always": false,
+        "header_bg_opacity": 100,
+        "header_bg_blur": 0,
+        "header_always_blurred": false,
+        "show_line_separator": false,
+        "show_shadow": false,
+        "logo": "shopify://shop_images/MW_ALL_LOGOS-01_copy_2x_1f53d1fa-b74e-4676-82c3-e1fb557cc0ae.png",
+        "large_screen_logo_width": 400,
+        "mobile_screen_logo_width": 200,
+        "menu": "main-menu",
+        "mobile_footer_menu": "footer",
+        "teaser_menu": "main-menu-new",
+        "teaser_menu_limit": 4,
+        "transparent_header_color": "#ffffff",
+        "show_country_selector": true,
+        "show_country_selector_label": false,
+        "show_country_selector_flag": false,
+        "show_language_selector": false,
+        "drawer_title": "Menu",
+        "enable_submenu_link_in_drawer": false,
+        "typing_search": "Find a product...",
+        "suggestions_title": "",
+        "suggestions_menu": ""
+      }
+    },
+    "notification_popup_LER4nx": {
+      "type": "notification-popup",
+      "blocks": {
+        "heading_GMQ7CY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_disable_on_mobile": false,
+            "size_heading": 100,
+            "size_heading_mobile": 100
+          }
+        },
+        "paragraph_RW4bNP": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "<p>Be the first to know about new collections and exclusive offers.</p>",
+            "text_disable_on_mobile": false
+          }
+        },
+        "email_form_XwetR3": {
+          "type": "email_form",
+          "settings": {
+            "button_select": "primary",
+            "button_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_GMQ7CY",
+        "paragraph_RW4bNP",
+        "email_form_XwetR3"
+      ],
+      "disabled": true,
+      "name": "t:sections.notification_popup.name",
+      "settings": {
+        "max_width": 450,
+        "delay": 0,
+        "show_border": false,
+        "show_shadow": true,
+        "desktop_vertical_position": "center",
+        "desktop_horizontal_position": "center",
+        "color-body-text": "rgba(0,0,0,0)",
+        "background_color": "rgba(0,0,0,0)"
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "notification_popup_LER4nx"
+  ]
+}

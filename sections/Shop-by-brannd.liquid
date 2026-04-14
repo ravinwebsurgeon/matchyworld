@@ -1,0 +1,25 @@
+<div class="Shop-by-brannd">
+    <div class="shop-by-con">
+        <div class="shop-by-lefft">
+            <div class="shop-by-img">
+                <img src="{{ collection.metafields.custom.brand_image | img_url:'master' }}" width="100%" height="100%">
+            </div>
+        </div>
+        <div class="shop-by-rrigfgt">
+            <div class="shop-by-content">
+                {{ collection.description }}
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+"name": "Brand Banner",
+"settings":[],
+"presets": [
+    {
+    "name": "Brand Banner"
+    }
+]
+}
+{% endschema %}

@@ -1,0 +1,142 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "main-breadcrumbs",
+      "disabled": true,
+      "settings": {
+        "full-width-enabled": false,
+        "text_color": "#000000",
+        "background_color": "#eeeeee",
+        "margin-top": 12,
+        "margin-bottom": 8
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_placeholder_image": true,
+        "layout": "text_first",
+        "desktop-percentage-image-width": 50,
+        "slide_height": "adapt_to_first_image",
+        "desktop_fixed_height": 320,
+        "mobile_fixed_height": 200,
+        "full-width-enabled": true,
+        "size_heading": 150,
+        "size_heading_mobile": 120,
+        "desktop_text_vertical_position": "center",
+        "desktop_text_horizontal_position": "left",
+        "mobile_text_horizontal_position": "center",
+        "color-body-text": "#000000",
+        "color-overlay": "#e3f2e6",
+        "color-overlay-opacity": 100,
+        "margin-top": 0,
+        "margin-bottom": 0
+      }
+    },
+    "title": {
+      "type": "main-collection-title",
+      "disabled": true,
+      "settings": {
+        "class": "shop-by-pro",
+        "full-width-enabled": false,
+        "show_collection_description": true,
+        "desktop_text_horizontal_position": "left",
+        "size_heading": 200,
+        "size_heading_mobile": 200,
+        "color-body-text": "#000000",
+        "background_color": "#ffffff",
+        "margin-top": 72,
+        "margin-bottom": 72
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 12,
+        "columns_mobile": "2",
+        "columns_desktop": "4",
+        "spacing_desktop": "16",
+        "full-width-enabled": false,
+        "spacing_mobile": "4",
+        "image_ratio": "portrait",
+        "show_video": false,
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "enable_vendor_link": true,
+        "show_product_rating": false,
+        "enable_product_url_within_collection": false,
+        "enable_quick_add_button": false,
+        "text_alignment": "left",
+        "toolbar_style": "buttons",
+        "enable_sorting": true,
+        "enable_filtering": true,
+        "filter_position": "drawer",
+        "open_first_filter": false,
+        "margin-top": 92,
+        "margin-bottom": 48
+      }
+    },
+    "collection_custom_banner_deQxVU": {
+      "type": "collection-custom-banner",
+      "name": "Custom Coll Banner",
+      "settings": {
+        "class": "",
+        "col_link": "shopify://collections/mom-kids",
+        "image": "shopify://shop_images/mom_kids_5cb2cb8c-37c9-4f7c-be52-b6bc61e4c747.png",
+        "coll_heading": "MOM & KIDS"
+      }
+    },
+    "collection_custom_banner_iVfHjr": {
+      "type": "collection-custom-banner",
+      "name": "Custom Coll Banner",
+      "settings": {
+        "class": "",
+        "col_link": "shopify://collections/clothing",
+        "image": "shopify://shop_images/dad_kids_ddfb174c-3a94-467a-ab8b-4eadb3dc7e28.png",
+        "coll_heading": "DAD & KIDS"
+      }
+    },
+    "collection_custom_banner_Rpi4dx": {
+      "type": "collection-custom-banner",
+      "name": "Custom Coll Banner",
+      "settings": {
+        "class": "",
+        "col_link": "shopify://collections/clothing",
+        "image": "shopify://shop_images/siblings_aa56c124-ed1b-4cf1-881b-eeec2814b2a6.png",
+        "coll_heading": "SIBLINGS"
+      }
+    },
+    "collection_custom_banner_nyVQcx": {
+      "type": "collection-custom-banner",
+      "name": "Custom Coll Banner",
+      "settings": {
+        "class": "coll-co-bb",
+        "col_link": "shopify://collections/clothing",
+        "image": "shopify://shop_images/family_97711cae-3e87-4473-8eb0-606e589aadd7.png",
+        "coll_heading": "ALL THE FAMILY"
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "banner",
+    "title",
+    "product-grid",
+    "collection_custom_banner_deQxVU",
+    "collection_custom_banner_iVfHjr",
+    "collection_custom_banner_Rpi4dx",
+    "collection_custom_banner_nyVQcx"
+  ]
+}

@@ -1,0 +1,148 @@
+<style>
+    .custom-galerry-inneer {
+    display: flex;
+    max-width: 1708px;
+    padding: 0 30px;
+    margin: 0 auto;
+    gap: 80px;
+    justify-content: space-between;
+}
+
+.custom-gallery-wraper {
+    background-color: #ffff83;
+    margin-top:113px;
+}
+
+.custom-galery-items:nth-child(1) img {
+    max-width: 407px;
+    object-fit: contain;
+    width: 100%;
+    padding-right: 37px;
+}
+
+.custom-galery-items a {
+    display: block;
+    height: 100%;
+}
+
+.custom-galery-items:nth-child(2) img {
+    max-width: 555px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.custom-galery-items:nth-child(3) img {
+    max-width: 526px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.custom-insta-items a {
+    display: block;
+}
+
+.custom-insta-items a img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1.111;
+}
+
+.custom-insta-inneer {
+    display: flex;
+}
+
+h2.insta-heading {
+    letter-spacing: unset;
+    text-align: center;
+    margin: 111px 0 60px;
+    font-size: 45px;
+    {% comment %} font-family: 'Didonesque Display'; {% endcomment %}
+    letter-spacing: 0;
+    line-height: 54px;
+}
+@media screen and (max-width: 749px) {
+h2.insta-heading {
+    font-size: 26px;
+    line-height: 28px;
+    margin: 64px 0 28px;
+}
+
+.custom-insta-inneer {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.custom-insta-items {
+    min-width: calc(48% / 1);
+}
+}
+@media screen and (min-width: 749px) and (max-width: 989px) {
+h2.insta-heading {
+    font-size: 33px;
+    line-height: 38px;
+    margin: 64px 0 28px;
+}
+
+.custom-insta-inneer {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.custom-insta-items {
+    min-width: calc(26% / 1);
+}
+}
+</style>
+
+<div class="custom-insta">
+    <h2 class="insta-heading">{{ section.settings.heading }}</h2>
+    <div class="custom-insta-wraper">
+        <div class="custom-insta-inneer">
+            {% for block in section.blocks %}
+                <div class="custom-insta-items">
+                    <a href="{{ block.settings.cust_link }}">
+                    <img src="{{ block.settings.image | img_url:'master' }}" width="100%" height="100%">
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+  "name": "Instagram",
+  "settings": [
+    {
+    "type": "text",
+    "id":"heading",
+    "label": "Add Heading"
+    }
+  ],
+  "blocks": [
+    {
+    "type": "image",
+    "name":"image",
+    "settings": [
+        {
+        "type": "url",
+        "id":"cust_link",
+        "label":"Add Image Link"
+        },
+        {
+        "type": "image_picker",
+        "id":"image",
+        "label": "Add Image"
+        }
+    ]}
+  ],
+  "presets": [
+    {
+      "name": "Instagram"
+    }
+  ]
+}
+{% endschema %}
