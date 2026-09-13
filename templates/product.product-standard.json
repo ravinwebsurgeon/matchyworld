@@ -51,6 +51,7 @@
         },
         "separator_6rwB6Q": {
           "type": "separator",
+          "disabled": true,
           "settings": {
             "show-separator-line": true,
             "color-background": "#000000",
@@ -96,6 +97,8 @@
           "type": "text",
           "settings": {
             "heading": "{{ product.metafields.custom.product_description.value }}",
+            "font_size": 21,
+            "font_size_mobile": 21,
             "content": "",
             "page": ""
           }
@@ -112,6 +115,10 @@
         "5fed6e0f-fb7e-4874-8ba9-3321623fc828": {
           "type": "collapsible_tab",
           "settings": {
+            "font_size": 21,
+            "font_size_mobile": 21,
+            "font_size_text": 21,
+            "font_size_mobile_text": 21,
             "heading": "Product Details",
             "content": "{{ product.description }}",
             "metafield_variables": "",
@@ -131,6 +138,10 @@
         "d162f900-ee92-4311-b27d-d5f312fa73f2": {
           "type": "collapsible_tab",
           "settings": {
+            "font_size": 21,
+            "font_size_mobile": 21,
+            "font_size_text": 21,
+            "font_size_mobile_text": 21,
             "heading": "Size Chart",
             "content": "<p>Our team will ship your order within 5 business days. The time it takes to receive your order depends on the shipping method chosen at checkout. </p><p><br/></p><p>We hope you to love it, but if you need to make a return, breathe easy. Returns are always free and can be done in person or by mail. </p>",
             "metafield_variables": "",
@@ -150,6 +161,10 @@
         "collapsible_tab_UBp4bp": {
           "type": "collapsible_tab",
           "settings": {
+            "font_size": 21,
+            "font_size_mobile": 21,
+            "font_size_text": 21,
+            "font_size_mobile_text": 21,
             "heading": "Delivery & Return Policy",
             "content": "<p>Our team will ship your order within 5 business days. The time it takes to receive your order depends on the shipping method chosen at checkout. </p><p><br/></p><p>We hope you to love it, but if you need to make a return, breathe easy. Returns are always free and can be done in person or by mail. </p>",
             "metafield_variables": "",
@@ -169,7 +184,9 @@
         "custom_complementary_WxJARC": {
           "type": "custom_complementary",
           "settings": {
-            "heading": "MATCH YOUR FAMILY"
+            "heading": "MATCH YOUR FAMILY",
+            "font_size": 21,
+            "font_size_mobile": 21
           }
         },
         "complementary_NCAzPJ": {
