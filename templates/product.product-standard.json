@@ -105,6 +105,7 @@
         },
         "2ce0b4b1-3440-40cd-92c2-15d46e61dfca": {
           "type": "separator",
+          "disabled": true,
           "settings": {
             "show-separator-line": true,
             "color-background": "#000000",
@@ -137,6 +138,7 @@
         },
         "d162f900-ee92-4311-b27d-d5f312fa73f2": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "font_size": 21,
             "font_size_mobile": 21,
@@ -151,6 +153,7 @@
         },
         "separator_M9U6NC": {
           "type": "separator",
+          "disabled": true,
           "settings": {
             "show-separator-line": true,
             "color-background": "#000000",
@@ -160,6 +163,7 @@
         },
         "collapsible_tab_UBp4bp": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "font_size": 21,
             "font_size_mobile": 21,
@@ -174,6 +178,7 @@
         },
         "separator_fEXMP9": {
           "type": "separator",
+          "disabled": true,
           "settings": {
             "show-separator-line": true,
             "color-background": "#000000",
