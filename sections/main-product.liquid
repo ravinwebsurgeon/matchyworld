@@ -286,6 +286,8 @@
       }
     {%- endcase -%}
     {%- endfor -%}
+
+
 </style>
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
@@ -1147,7 +1149,7 @@
               {%- endif -%}
               {% if block.settings.heading != blank or block.settings.content != blank or request.design_mode %}
               <collapsible-section
-                class="wt-collapse wt-collapse--always {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}"
+                class="jhj wt-collapse wt-collapse--always {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}"
                 {% comment %}data-accordion-set="pdp"{% endcomment %}
                 data-toggle-tabindex="button, [href], input, select"
                 {%- if has_variant_metafields -%}
@@ -1230,6 +1232,27 @@
                 </div>
               </collapsible-section>
             {% endif %}
+                            <style>
+@media screen and (min-width: 989px) {
+  .wt-product .wt-collapse__trigger__title {
+    font-size: {{ block.settings.font_size | default: 23 }}px;
+  }
+  .wt-collapse__target__content.rte {
+    font-size: {{ block.settings.font_size_text | default: 23 }}px;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .wt-product .wt-collapse__trigger__title {
+    font-size: {{ block.settings.font_size_mobile | default: 21 }}px;
+  }
+  .wt-collapse__target__content.rte {
+    font-size: {{ block.settings.font_size_mobile_text | default: 21 }}px;
+  }
+}
+</style>
+
+
             {%- when 'collapsible_file_row' -%}
               {% liquid
                 assign has_variant_file_metafields = false
@@ -1477,8 +1500,7 @@
                 {% if block.settings.heading != empty %}
                 <div
                     class="wt-product__text-block__title {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}"
-                    not-quick-add
-                >
+                    not-quick-add>
                     {{- block.settings.heading -}}
                 </div>
                 {% endif %}
@@ -1488,6 +1510,19 @@
                     {{ block.settings.page.content }}
                 </div>
               </div>
+              <style>
+@media screen and (min-width: 989px) {
+  .wt-product__text-block__title {
+    font-size: {{ block.settings.font_size | default: 23 }}px;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .wt-product__text-block__title {
+    font-size: {{ block.settings.font_size_mobile | default: 21 }}px;
+  }
+}
+</style>
            
 
             {% when 'upsell' %}
@@ -1880,23 +1915,23 @@
                   -%}
                   
                       <!-- Personalisation Field -->
-    <div class="personalise-field">
-      <label for="initials">
-        Enter the Name or Initials (Free) <span style="color:red">*</span>
-      </label>
+                    {% comment %} <div class="personalise-field">
+                      <label for="initials">
+                        Enter the Name or Initials (Free) <span style="color:red">*</span>
+                      </label>
 
-      <input
-        type="text"
-        id="initials"
-        name="properties[Name or Initials]"
-        maxlength="9"
-        placeholder="Enter the name"
-      >
+                      <input
+                        type="text"
+                        id="initials"
+                        name="properties[Name or Initials]"
+                        maxlength="9"
+                        placeholder="Enter the name"
+                      >
 
-      <p class="field-note">
-        Maximum 9 characters. No special characters.
-      </p>
-    </div>
+                      <p class="field-note">
+                        Maximum 9 characters. No special characters.
+                      </p>
+                    </div> {% endcomment %}
 
                   
                     {% if block.settings.show_gift_card_recipient and product.gift_card? %}
@@ -2106,13 +2141,19 @@
   <slideshow-section class="complementary-products-slider">
 
     <div data-swiper class="complementary-products__container">
-
+              <div class="swiper-button-prev complementary-prev complementary-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.7184 24.2852L12.4314 16.0002L20.7194 7.71522C21.1144 7.32022 21.1144 6.68122 20.7194 6.28622C20.3244 5.89222 19.6844 5.89222 19.2894 6.28622L10.2874 15.2852C9.89237 15.6792 9.89237 16.3192 10.2874 16.7132L19.2894 25.7122C19.6844 26.1062 20.3254 26.1062 20.7204 25.7122C21.1134 25.3192 21.1134 24.6792 20.7184 24.2852Z" fill="#121313"></path>
+</svg></div>
+<div class="swiper-button-next complementary-next complementary-icon"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.2816 7.71478L19.5686 15.9998L11.2806 24.2848C10.8856 24.6798 10.8856 25.3188 11.2806 25.7138C11.6756 26.1078 12.3156 26.1078 12.7106 25.7138L21.7126 16.7148C22.1076 16.3208 22.1076 15.6808 21.7126 15.2868L12.7106 6.28778C12.3156 5.89378 11.6746 5.89378 11.2796 6.28778C10.8866 6.68078 10.8866 7.32078 11.2816 7.71478Z" fill="#121313"></path>
+</svg></div>
       <div data-swiper-container class="complementary-products-grid">
 
         {% for product_item in product.metafields.custom.complementary_products.value %}
 
           <div data-swiper-slide class="complementary-product-card">
-
+             <div class="prosdsd-vbbf-wrr">
+            <div class="pro-vbbf-wrr">
             <a href="{{ product_item.url }}">
               <img
                 src="{{ product_item.featured_image | image_url: width: 500 }}"
@@ -2129,23 +2170,38 @@
                 <h3 class="product-title">
                   {{ product_item.title }}
                 </h3>
-
+                  <div class="variants__detail">
+                    <script type="application/json" class="card-variants-json">
+                    {{ product_item.variants | json }}
+                    </script>
+                    {% render 'featured__product__variants', 
+                        product:product_item
+                    %}
+                </div>
                 <div class="product-price">
                   {{ product_item.price | money }}
                 </div>
               </a>
-
+              {% comment %} 
               <button
                 class="complementary-add-cart"
                 data-variant-id="{{ product_item.selected_or_first_available_variant.id }}"
               >
                 Add to Cart
-              </button>
+              </button> {% endcomment %}
 
             </div>
-
           </div>
-
+                            <div class="cart_added_btn">
+                    <button class="ajax__cart__add add_to_cart" 
+                        data-variant-id="{{ product_item.selected_or_first_available_variant.id }}"{% unless product.available %}disabled_btn {% endunless %}"
+                        {% unless product_item.available %}disabled {% endunless %}
+                    > 
+                    {% if product_item.available %}Add To Cart{% else %}Sold Out{% endif %}
+                    </button>
+                </div>
+              </div>
+          </div>
         {% endfor %}
 
       </div>
@@ -2154,14 +2210,18 @@
 
 <script data-swiper-configuration type="text/json">
 {
-  "slidesPerView": 1.4,
+  "slidesPerView": 2.4,
   "spaceBetween": 10,
   "slidesPerGroup": 1,
   "loop": false,
   "speed": 300,
+  "navigation": {
+    "nextEl": ".complementary-next",
+    "prevEl": ".complementary-prev"
+  },
   "breakpoints": {
     "767": {
-      "slidesPerView": 1.1,
+      "slidesPerView": 2.1,
       "slidesPerGroup": 1
     },
         "768": {
@@ -2169,15 +2229,15 @@
       "slidesPerGroup": 1
     },
     "899": {
-      "slidesPerView": 1.2,
+      "slidesPerView": 2.2,
       "slidesPerGroup": 1
     },
     "1024": {
-      "slidesPerView": 1.2,
+      "slidesPerView": 2.2,
       "slidesPerGroup": 1
     },
     "1480": {
-      "slidesPerView": 1.4,
+      "slidesPerView": 2.4,
       "slidesPerGroup": 2
     }
   }
@@ -2185,12 +2245,28 @@
 </script>
 
   </slideshow-section>
-
+{% if template contains 'product' and product.metafields.custom.complementary_products.value != blank %}
+ 
+  <div class="cart_main_btn">
+  <button class="all_variants_add ajax__cart__add" data-variant-ids="{{all_variants_ids }}">Add All Matching items to Cart </button>
+</div>
+{% endif %}
 </div>
 
 {% endif %}
+<style>
+@media screen and (min-width: 989px) {
+  .complementary-products-section .section-heading {
+    font-size: {{ block.settings.font_size | default: 23 }}px;
+  }
+}
 
-
+@media screen and (max-width: 989px) {
+  .complementary-products-section .section-heading {
+    font-size: {{ block.settings.font_size_mobile | default: 21 }}px;
+  }
+}
+</style>
 
             {%- when 'share_buttons' -%}
               <div class="share-icons__container {% if block.settings.heading == empty %}share-icons__container--noheading {% endif %} {% if settings.animations %} scroll-trigger animate--slide-in {% endif %} {% if settings.disabled_animations_on_mobile %} disabled-on-mobile {% endif %}">
@@ -2886,6 +2962,7 @@
   </div>
 </section>
 
+
 {% if section.settings['desktop-layout'] == fashion_type %}
   </gallery-fashion>
 {% endif %}
@@ -3066,6 +3143,248 @@ document.addEventListener('click', function(e) {
 </script>
 <script type="module" src="{{ 'gallery.js' | asset_url }}" defer="defer"></script>
 <script type="module" src="{{ 'pdp.js' | asset_url }}" defer="defer"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.ajax__cart__add').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        ajaxCartAdd(btn);
+      });
+    });
+  function updateCardVariant(card) {
+    const picker = card.querySelector('.card-variant-picker');
+    const button = card.querySelector('.ajax__cart__add');
+    const jsonScript = card.querySelector('.card-variants-json');
+      const priceEl = card.querySelector('.product-price');
+
+    if (!picker || !button || !jsonScript) return;
+
+    let variants = [];
+    try {
+      variants = JSON.parse(jsonScript.textContent);
+    } catch (e) {
+      console.error('Variant JSON error', e);
+      return;
+    }
+    // get selected values ONLY inside this card
+    const selected = Array.from(
+      picker.querySelectorAll('.card-option')
+    ).map(option => {
+      const checked = option.querySelector('input[type="radio"]:checked');
+      return checked ? checked.value.trim().toLowerCase() : null;
+    });
+
+    const matched = variants.find(variant => {
+      return variant.options.every((opt, i) => {
+        return (opt || '').trim().toLowerCase() === (selected[i] || '');
+      });
+    });
+
+    if (!matched) return;
+
+    button.setAttribute('data-variant-id', matched.id);
+     priceEl.innerHTML = formatMoney(matched.price);
+
+    if (!matched.available) {
+      button.disabled = true;
+      button.textContent = 'Sold Out';
+      button.setAttribute('data-soldout', 'true');
+    } else {
+      button.disabled = false;
+      button.textContent = 'Add To Cart';
+      button.setAttribute('data-soldout', 'false');
+    }
+
+    updateVariantInMain();
+  }
+function formatMoney(cents) {
+  if (cents === null || cents === undefined) return '';
+  
+  const amount = (cents / 100).toFixed(2);
+  let format = window.shopMoneyFormat || 'Dhs.{{amount}}';
+  
+  // Remove any debugging output
+  // Use regex to match {{amount}} with or without spaces
+  const formatted = format.replace(/\{\{\s*amount\s*\}\}/g, amount);
+  
+  // Debug: log what's happening
+  console.log('Original format:', format);
+  console.log('Amount:', amount);
+  console.log('Formatted result:', formatted);
+  
+  return formatted;
+}
+  function getMainVariant() {
+    const id = getMainProductVariantId();
+    const json = document.getElementById('ProductVariantsJson');
+    if (!json || !id) return null;
+
+    try {
+      const variants = JSON.parse(json.textContent);
+      return variants.find((v) => String(v.id) === String(id));
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function getMainProductVariantId() {
+    const input = document.querySelector('form[action*="/cart/add"] input[name="id"]');
+    return input ? input.value : null;
+  }
+
+  function updateVariantInMain() {
+    
+    const mainBtn = document.querySelector('.all_variants_add');
+    if (!mainBtn) return;
+
+    const ids = [];
+    const mainVariantId = getMainProductVariantId();
+      const mainVariant = getMainVariant();
+
+      if (mainVariant && mainVariant.available) {
+        ids.push(mainVariant.id);
+      }
+    document.querySelectorAll('.complementary-product-card').forEach(card => {
+      const btn = card.querySelector('.ajax__cart__add');
+      const id = btn?.getAttribute('data-variant-id');
+      const isSoldOut = btn?.getAttribute('data-soldout') === 'true';
+
+      if (id && !isSoldOut) ids.push(id);
+    });
+
+    mainBtn.setAttribute('data-variant-ids', ids.join(','));
+  }
+  // bind per card
+  document.querySelectorAll('.complementary-product-card').forEach(card => {
+
+    const inputs = card.querySelectorAll('input[type="radio"]');
+
+    inputs.forEach(input => {
+      input.addEventListener('change', () => {
+        updateCardVariant(card);
+        {% comment %} updatePrice(card) {% endcomment %}
+      });
+    });
+
+    // initial run per card
+    updateCardVariant(card);
+  });
+
+  document.addEventListener('change', function (e) {
+    if (e.target.closest('form[action*="/cart/add"]')) {
+      updateVariantInMain();
+    }
+  });
+
+  updateVariantInMain();
+});
+</script>
+{% comment %} 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.ajax__cart__add').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        ajaxCartAdd(btn);
+      });
+    });
+
+    function getMainProductVariantId() {
+      const input = document.querySelector('form[action*="/cart/add"] input[name="id"]');
+      return input ? input.value : null;
+    }
+    function getMainVariant() {
+      const id = getMainProductVariantId();
+      const json = document.getElementById('ProductVariantsJson');
+      if (!json || !id) return null;
+
+      try {
+        const variants = JSON.parse(json.textContent);
+        return variants.find((v) => String(v.id) === String(id));
+      } catch (e) {
+        return null;
+      }
+    }
+
+    function updateVariantInMain() {
+      const mainBtn = document.querySelector('.all_variants_add');
+      if (!mainBtn) return;
+      const ids = [];
+      const mainVariantId = getMainProductVariantId();
+      const mainVariant = getMainVariant();
+
+      if (mainVariant && mainVariant.available) {
+        ids.push(mainVariant.id);
+      }
+      document.querySelectorAll('.complementary-product-card').forEach((card) => {
+        const btn = card.querySelector('.ajax__cart__add');
+
+        const id = btn?.getAttribute('data-variant-id');
+        const isSoldOut = btn?.getAttribute('data-soldout') === 'true';
+
+        if (id && !isSoldOut) {
+          ids.push(id);
+        }
+      });
+      mainBtn.setAttribute('data-variant-ids', ids.join(','));
+    }
+    function updateVariant(card, picker, button, variants) {
+      let selected = [];
+      picker.querySelectorAll('.card-option').forEach((option) => {
+        const checked = option.querySelector('input[type="radio"]:checked');
+        if (checked) {
+          selected.push(checked.value.trim().toLowerCase());
+        }
+      });
+
+      const matched = variants.find((variant) => {
+        return variant.options.every((opt, i) => {
+          return opt.trim().toLowerCase() === selected[i];
+        });
+      });
+
+      if (!matched) return;
+      button.setAttribute('data-variant-id', matched.id);
+      if (!matched.available) {
+        button.disabled = true;
+        button.textContent = 'Sold Out';
+        button.setAttribute('data-soldout', 'true');
+      } else {
+        button.disabled = false;
+        button.textContent = 'Add To Cart';
+        button.setAttribute('data-soldout', 'false');
+      }
+    }
+
+    document.querySelectorAll('.complementary-product-card').forEach(function (card) {
+      const picker = card.querySelector('.card-variant-picker');
+      const button = card.querySelector('.ajax__cart__add');
+      const jsonScript = card.querySelector('.card-variants-json');
+      
+
+      if (!picker || !button || !jsonScript) return;
+      let variants = [];
+      try {
+        variants = JSON.parse(jsonScript.textContent);
+      } catch (e) {
+        console.error('Variant JSON error', e);
+        return;
+      }
+      picker.querySelectorAll('input[type="radio"]').forEach((input) => {
+        input.addEventListener('change', function () {
+          updateVariant(card, picker, button, variants);
+          updateVariantInMain();
+        });
+      });
+      updateVariant(card, picker, button, variants);
+    });
+    document.addEventListener('change', function (e) {
+      if (e.target.closest('form[action*="/cart/add"]')) {
+        updateVariantInMain();
+      }
+    });
+
+    updateVariantInMain();
+  });
+</script> {% endcomment %}
 
 {% schema %}
 {
@@ -3581,7 +3900,27 @@ document.addEventListener('click', function(e) {
         "type":"inline_richtext",
         "id":"heading",
         "label":"Add Heading"
-      }
+      },
+        {
+  "type": "range",
+  "id": "font_size",
+  "min": 0,
+  "max": 300,
+  "step": 3,
+  "default": 21,
+  "label": "Font Size Heading",
+  "unit": "px"
+},
+{
+  "type": "range",
+  "id": "font_size_mobile",
+  "min": 0,
+  "max": 300, 
+  "step": 3,
+  "default": 21,
+  "label": "Font Size Mobile Heading",
+  "unit": "px"
+}
       ]
     },
     {
@@ -4574,6 +4913,46 @@ document.addEventListener('click', function(e) {
       "name": "t:sections.main-product.blocks.collapsible_tab.name",
       "settings": [
         {
+  "type": "range",
+  "id": "font_size",
+  "min": 0,
+  "max": 300,
+  "step": 3,
+  "default": 21,
+  "label": "Font Size Heading",
+  "unit": "px"
+},
+{
+  "type": "range",
+  "id": "font_size_mobile",
+  "min": 0,
+  "max": 300, 
+  "step": 3,
+  "default": 21,
+  "label": "Font Size Mobile Heading",
+  "unit": "px"
+},
+        {
+  "type": "range",
+  "id": "font_size_text",
+  "min": 0,
+  "max": 300,
+  "step": 3,
+  "default": 21,
+  "label": "Font Size Text",
+  "unit": "px"
+},
+{
+  "type": "range",
+  "id": "font_size_mobile_text",
+  "min": 0,
+  "max": 300, 
+  "step": 3,
+  "default": 21,
+  "label": "Font Size Mobile Text",
+  "unit": "px"
+},
+        {
           "type": "text",
           "id": "heading",
           "default": "Collapsible row",
@@ -4765,6 +5144,26 @@ document.addEventListener('click', function(e) {
           "info": "t:sections.main-product.blocks.collapsible_tab.settings.heading.info",
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.heading.label"
         },
+{
+  "type": "range",
+  "id": "font_size",
+  "min": 0,
+  "max": 300,
+  "step": 3,
+  "default": 21,
+  "label": "Font Size",
+  "unit": "px"
+},
+{
+  "type": "range",
+  "id": "font_size_mobile",
+  "min": 0,
+  "max": 300, 
+  "step": 3,
+  "default":21,
+  "label": "Font Size Mobile",
+  "unit": "px"
+},
         {
           "type": "richtext",
           "id": "content",
