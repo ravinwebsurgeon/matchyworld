@@ -1013,7 +1013,7 @@
                     <a class="vendor-link" href="/collections/vendors?q={{ product.vendor }}">
                   {% endif %}
                   <span class="wt-product__brand__name">
-                    {{ block.settings.brand }}
+                    {{ product.vendor }}
                   </span>
                   {% if block.settings.enable_vendor_link %}
                   </a>
@@ -1878,28 +1878,7 @@
                     novalidate: 'novalidate',
                     data-type: 'add-to-cart-form'
                   -%}
-                  
-                      <!-- Personalisation Field -->
-    <div class="personalise-field">
-      <label for="initials">
-        Enter the Name or Initials (Free) <span style="color:red">*</span>
-      </label>
-
-      <input
-        type="text"
-        id="initials"
-        name="properties[Name or Initials]"
-        maxlength="9"
-        placeholder="Enter the name"
-      >
-
-      <p class="field-note">
-        Maximum 9 characters. No special characters.
-      </p>
-    </div>
-
-                  
-                    {% if block.settings.show_gift_card_recipient and product.gift_card? %}
+{% if block.settings.show_gift_card_recipient and product.gift_card? %}
                       {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
                     {% endif %}
                     <div class="wt-product__add-to-cart_form--wrapper product-form__buttons">
@@ -2943,10 +2922,6 @@
   }
 </script>
 <script>
-        document.getElementById("initials").addEventListener("input", function() {
-  this.value = this.value.replace(/[^a-zA-Z0-9 ]/g, "");
-});
-
 document.addEventListener('click', function(e) {
 
   const btn = e.target.closest('.complementary-add-cart');
