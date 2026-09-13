@@ -288,6 +288,256 @@
     {%- endfor -%}
 </style>
 
+
+<style>
+  /* Matchy World PDP refinement
+     Brand book: Off White / Black foundation, restrained Sky Blue accent,
+     display serif for product headings, Avenir-style UI typography. */
+  [id="shopify-section-{{ section.id }}"] {
+    --mw-off-white: #F9F9F9;
+    --mw-black: #000000;
+    --mw-sky-blue: #6F89BA;
+    --mw-cherry-sun: #F36F75;
+    --mw-limon-glow: #FFFF83;
+
+    --mw-display-font: "Didonesque", "Playfair Display", "Times New Roman", serif;
+    --mw-body-font: "Bodoni 72", "Playfair Display", "Times New Roman", serif;
+    --mw-ui-font: "Avenir Next", Avenir, Arial, sans-serif;
+
+    background: var(--mw-off-white);
+    color: var(--mw-black);
+  }
+
+  /* Keep the PDP visually calm and consistent. */
+  [id="shopify-section-{{ section.id }}"] .wt-product__main,
+  [id="shopify-section-{{ section.id }}"] .wt-product__info {
+    background: var(--mw-off-white);
+    color: var(--mw-black);
+  }
+
+  [id="shopify-section-{{ section.id }}"] .wt-product__info {
+    max-width: 600px;
+  }
+
+  /* Brand */
+  [id="shopify-section-{{ section.id }}"] .wt-product__brand,
+  [id="shopify-section-{{ section.id }}"] .wt-product__brand__name,
+  [id="shopify-section-{{ section.id }}"] .vendor-link {
+    font-family: var(--mw-ui-font);
+    color: var(--mw-black);
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  /* Product title */
+  [id="shopify-section-{{ section.id }}"] .wt-product__name {
+    font-family: var(--mw-display-font);
+    color: var(--mw-black);
+    font-size: clamp(30px, 2.2vw, 38px);
+    line-height: 1.08;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-top: 12px;
+    margin-bottom: 18px;
+  }
+
+  /* Price: neutral rather than another competing accent color. */
+  [id="shopify-section-{{ section.id }}"] .wt-product__price,
+  [id="shopify-section-{{ section.id }}"] .wt-product__price *,
+  [id="shopify-section-{{ section.id }}"] .price,
+  [id="shopify-section-{{ section.id }}"] .price * {
+    font-family: var(--mw-ui-font);
+    color: var(--mw-black) !important;
+  }
+
+  [id="shopify-section-{{ section.id }}"] .price--large {
+    font-size: 18px;
+    line-height: 1.35;
+    font-weight: 400;
+  }
+
+  /* Utility labels and controls */
+  [id="shopify-section-{{ section.id }}"] .wt-product__option__title,
+  [id="shopify-section-{{ section.id }}"] .wt-product__option__title .label,
+  [id="shopify-section-{{ section.id }}"] .product__tax,
+  [id="shopify-section-{{ section.id }}"] .caption,
+  [id="shopify-section-{{ section.id }}"] .wt-product__sku {
+    font-family: var(--mw-ui-font);
+    color: var(--mw-black);
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  [id="shopify-section-{{ section.id }}"] .wt-product__option__title {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  /* Size / variant buttons */
+  [id="shopify-section-{{ section.id }}"] .f-button__list {
+    gap: 8px;
+  }
+
+  [id="shopify-section-{{ section.id }}"] .f-button__list__link {
+    min-width: 48px;
+    min-height: 44px;
+    padding: 10px 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0,0,0,.38);
+    border-radius: 0;
+    background: transparent;
+    color: var(--mw-black);
+    font-family: var(--mw-ui-font);
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 400;
+    transition: background .2s ease, color .2s ease, border-color .2s ease;
+  }
+
+  [id="shopify-section-{{ section.id }}"] .f-button__list__link:hover,
+  [id="shopify-section-{{ section.id }}"] .f-button__list input:checked + .f-button__list__link,
+  [id="shopify-section-{{ section.id }}"] .f-button__list__link.active {
+    background: var(--mw-black);
+    border-color: var(--mw-black);
+    color: var(--mw-off-white);
+  }
+
+  [id="shopify-section-{{ section.id }}"] .f-button__list input.disabled + .f-button__list__link,
+  [id="shopify-section-{{ section.id }}"] .f-button__list__link.disabled {
+    opacity: .35;
+  }
+
+  /* Primary CTA: simple black / off-white. */
+  [id="shopify-section-{{ section.id }}"] .product-form__submit,
+  [id="shopify-section-{{ section.id }}"] .js-add-to-cart {
+    min-height: 52px;
+    border-radius: 0;
+    background: var(--mw-black) !important;
+    border-color: var(--mw-black) !important;
+    color: var(--mw-off-white) !important;
+    font-family: var(--mw-ui-font);
+    font-size: 13px;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  [id="shopify-section-{{ section.id }}"] .product-form__submit:hover:not(:disabled),
+  [id="shopify-section-{{ section.id }}"] .js-add-to-cart:hover:not(:disabled) {
+    background: var(--mw-sky-blue) !important;
+    border-color: var(--mw-sky-blue) !important;
+  }
+
+  [id="shopify-section-{{ section.id }}"] .product-form__submit:disabled,
+  [id="shopify-section-{{ section.id }}"] .js-add-to-cart:disabled {
+    background: #E4E4E4 !important;
+    border-color: #E4E4E4 !important;
+    color: #747474 !important;
+    opacity: 1;
+  }
+
+  /* Calm down decorative separators. */
+  [id="shopify-section-{{ section.id }}"] .wt-product__separator {
+    height: 1px;
+    opacity: .18;
+    background: var(--mw-black) !important;
+  }
+
+  /* Product information accordions */
+  [id="shopify-section-{{ section.id }}"] .wt-collapse {
+    border-color: rgba(0,0,0,.28);
+  }
+
+  [id="shopify-section-{{ section.id }}"] .wt-collapse__trigger {
+    min-height: 56px;
+    padding: 17px 0;
+    color: var(--mw-black);
+  }
+
+  [id="shopify-section-{{ section.id }}"] .wt-collapse__trigger__title {
+    font-family: var(--mw-ui-font);
+    color: var(--mw-black);
+    font-size: 13px;
+    line-height: 1.3;
+    font-weight: 500;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+  }
+
+  [id="shopify-section-{{ section.id }}"] .wt-collapse__target--text,
+  [id="shopify-section-{{ section.id }}"] .wt-collapse__target__content,
+  [id="shopify-section-{{ section.id }}"] .wt-collapse__target--text p,
+  [id="shopify-section-{{ section.id }}"] .wt-collapse__target--text li {
+    font-family: var(--mw-body-font);
+    color: var(--mw-black);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  [id="shopify-section-{{ section.id }}"] .wt-collapse__target--text ul {
+    padding-left: 20px;
+  }
+
+  [id="shopify-section-{{ section.id }}"] .wt-collapse__target--text strong {
+    color: var(--mw-black);
+    font-weight: 600;
+  }
+
+  /* Let the page breathe without becoming oversized. */
+  [id="shopify-section-{{ section.id }}"] .wt-product__options {
+    margin-top: 6px;
+    margin-bottom: 14px;
+  }
+
+  [id="shopify-section-{{ section.id }}"] .main-product__buy-buttons--container {
+    margin-top: 18px;
+    margin-bottom: 24px;
+  }
+
+  /* Reserve secondary colors for small interactive accents only. */
+  [id="shopify-section-{{ section.id }}"] a:focus-visible,
+  [id="shopify-section-{{ section.id }}"] button:focus-visible,
+  [id="shopify-section-{{ section.id }}"] input:focus-visible {
+    outline: 2px solid var(--mw-sky-blue);
+    outline-offset: 2px;
+  }
+
+  @media screen and (max-width: 749px) {
+    [id="shopify-section-{{ section.id }}"] .wt-product__name {
+      font-size: 28px;
+      line-height: 1.12;
+      margin-top: 10px;
+      margin-bottom: 14px;
+    }
+
+    [id="shopify-section-{{ section.id }}"] .wt-product__brand,
+    [id="shopify-section-{{ section.id }}"] .wt-product__brand__name,
+    [id="shopify-section-{{ section.id }}"] .vendor-link {
+      font-size: 12px;
+    }
+
+    [id="shopify-section-{{ section.id }}"] .wt-collapse__trigger {
+      min-height: 52px;
+      padding: 15px 0;
+    }
+
+    [id="shopify-section-{{ section.id }}"] .wt-collapse__target--text,
+    [id="shopify-section-{{ section.id }}"] .wt-collapse__target__content,
+    [id="shopify-section-{{ section.id }}"] .wt-collapse__target--text p,
+    [id="shopify-section-{{ section.id }}"] .wt-collapse__target--text li {
+      font-size: 14px;
+      line-height: 1.55;
+    }
+  }
+</style>
+
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'variants.js' | asset_url }}" defer="defer"></script>
